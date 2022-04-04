@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 
 public class TictactoeTest {
     @Test
-    void test1() {
+    void getInitializedBoardTest() {
         // Arrange
         Tictactoe tictactoe = new Tictactoe();
 
@@ -13,7 +13,7 @@ public class TictactoeTest {
                 {' ', ' ', ' '},
         };
         // act
-        char[][] actual = tictactoe.getTictactoeBoard();
+        char[][] actual = tictactoe.getGameBoard();
 
         // Arrange
         Assertions.assertArrayEquals(expected, actual);

@@ -1,10 +1,15 @@
 public class Tictactoe {
-    public char[][] getTictactoeBoard() {
-        char[][] gameBoard = {
+    private char[][] gameBoard;
+
+    public Tictactoe() {
+        this.gameBoard = new char[][]{
                 {' ', ' ', ' '},
                 {' ', ' ', ' '},
                 {' ', ' ', ' '},
         };
+    }
+
+    public char[][] getGameBoard() {
         return gameBoard;
     }
 }
