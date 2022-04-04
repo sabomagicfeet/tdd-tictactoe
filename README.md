@@ -22,7 +22,7 @@ In random order
 
 #### Sketch
 - a game has nine fields in a 3x3 grid
-    - 3x3 2d String array (initialize " ")
+    - 3x3 2d char array (initialize ' ')
 
 - there are two players in the game (X and O)
 
