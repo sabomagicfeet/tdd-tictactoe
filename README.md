@@ -20,12 +20,14 @@ In random order
 
 ---------------------------------------------------------------------------------------------------------
 
-#### Sketch
+#### Done
 - a game has nine fields in a 3x3 grid
     - 3x3 2d char array (initialize ' ')
     - refactoring array to 5x5 for drawing game board (to divide game blocks)
-    
+  
 
+## Next Step
 - there are two players in the game (X and O)
-
-    
+    - user keyboard input
+  
+...
