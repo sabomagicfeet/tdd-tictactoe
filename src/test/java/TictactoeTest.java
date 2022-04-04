@@ -2,15 +2,18 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class TictactoeTest {
+
     @Test
     void getInitializedBoardTest() {
         // Arrange
         Tictactoe tictactoe = new Tictactoe();
 
         char[][] expected = {
-                {' ', ' ', ' '},
-                {' ', ' ', ' '},
-                {' ', ' ', ' '},
+                {' ', '|', ' ', '|', ' '},
+                {'-', '+', '-', '+', '-'},
+                {' ', '|', ' ', '|', ' '},
+                {'-', '+', '-', '+', '-'},
+                {' ', '|', ' ', '|', ' '}
         };
         // act
         char[][] actual = tictactoe.getGameBoard();
@@ -18,5 +21,12 @@ public class TictactoeTest {
         // Arrange
         Assertions.assertArrayEquals(expected, actual);
 
+    }
+
+    @Test
+    void printGameBoardTest() {
+        // Arrange
+        Tictactoe tictactoe = new Tictactoe();
+        tictactoe.printGameBoard();
     }
 }
